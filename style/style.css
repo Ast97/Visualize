@@ -1,0 +1,60 @@
+body{
+   background: #E2E2E2;
+}
+h5{
+  text-align: left;
+  color: #141E30;
+}
+
+.btn, .btn:hover, .btn:focus{
+  background: steelblue;
+  color: white;
+}
+
+.collapsible{
+  background: #7eaacd;
+  color: white;
+}
+
+#list{
+  color: black;
+}
+
+li.selected {
+  background-color: #b6cee2;
+  color: black;
+}
+
+#list li:hover {
+  background-color: #edf3f8;
+}
+
+#adminHeader{
+  background-color: white;
+}
+.sidenav,#navbar{
+  background: #edf3f8;
+}
+
+#list{
+  text-align: center;
+  background-color: white;
+  width:100%;
+}
+
+.container{
+  width:100%;
+}
+
+.card{
+  height: 500px;
+}
+
+#dropdownMenuButton,#visualizeButton,#useCaseOneButton,#dropdown-menu{
+  width: 100%;
+}
+
+main, footer {
+      padding-left: 300px;
+      width: auto;
+}

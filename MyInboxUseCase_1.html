@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <link rel="stylesheet" href="style\bootstrap-4.3.1-dist\css\bootstrap.min.css">
+      <link type="text/css" rel="stylesheet" href="style\materialize-v1.0.0\css\materialize.min.css"  media="screen,projection"/>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" href="style\style.css">
+      <title>Visualize ITF-Admin Module</title>
+   </head>
+   <body>
+     <div>
+       <ul id="slide-out" class="sidenav sidenav-fixed">
+        <li>
+          <nav class="navbar" id="navbar">
+            <a class="brand-logo white-text" href="index.html" style="text-decoration: none;">My App</a>
+          </nav>
+        </li>
+        <li>
+          <ul class="collapsible">
+            <li>
+              <div class="collapsible-header">Use Case 1</div>
+              <div class="collapsible-body"><span><ul id='list'></ul></span></div>
+            </li>
+            <li>
+              <div class="collapsible-header">Use Case 2</div>
+              <div class="collapsible-body"><span><ul id='list'></span></div>
+            </li>
+          </ul>
+        </li>
+       </ul>
+     </div>
+     <main>
+       <nav class="navbar" id="adminHeader">
+         <h5>Welcome to My Inbox</h5>
+       </nav>
+       <br>
+       <div class="row">
+         <div class="col">
+           <div class="dropdown">
+             <button class="btn waves-effect dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               Select Attribute
+               <span class="caret"></span>
+             </button>
+             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="dropdown-menu">
+               <a class="dropdown-item" id="errorPct" data-value="errorPct" >Error Percentage</a>
+               <a class="dropdown-item" id="maxResTime" data-value="maxResTime">Maximum Response Time</a>
+               <a class="dropdown-item" id="meanResTime" data-value="meanResTime">Mean Response time</a>
+               <a class="dropdown-item" id="minResTime" data-value="minResTime">Minimum Response Time</a>
+               <a class="dropdown-item" id="throughput" data-value="throughput">Throughput</a>
+               <a class="dropdown-item" id="receivedKBytesPerSec" data-value="receivedKBytesPerSec">Received KB/Sec</a>
+               <a class="dropdown-item" id="sentKBytesPerSec" data-value="sentKBytesPerSec">Sent KB/Sec</a>
+             </div>
+           </div>
+         </div>
+       </div>
+       <div class="card">
+         <div class="card-body">
+           <div id="container" style="min-width: auto ; height: auto ; margin: 0 auto; align: center">
+             <i class="material-icons large" style="font-size:25rem; opacity: 0.1; margin-left: 21rem; margin-top:2rem;">assessment</i>
+           </div>
+         </div>
+       </div>
+     </main>
+     <script src="js\jquery-3.4.1.min.js"></script>
+     <script src="js\popper.min.js"></script>
+     <script src="style\bootstrap-4.3.1-dist\js\bootstrap.min.js"></script>
+     <script>var mod="MyInbox";var usecase="Usecase 1"</script>
+     <script src="js\graphy.js"></script>
+     <script src="js\Highcharts-7.1.1\code\highcharts.js"></script>
+     <script src="style\materialize-v1.0.0\js\materialize.min.js"></script>
+   </body>
+</html>
